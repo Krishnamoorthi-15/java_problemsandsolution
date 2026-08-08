@@ -3,13 +3,12 @@ class ForLoop {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n=sc.nextInt();
-       
+        int s=0;
         
         for (int i = 1; i <=n; i++) {
-            System.out.println("good morning");
+            s=s+i;
           
-         
         }
-        
+         System.out.println(s);
     }
 }
