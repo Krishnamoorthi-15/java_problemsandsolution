@@ -1,0 +1,19 @@
+class Reverse{
+    public int reverseNumber(int n){
+        int rev=0;
+        while(n>0){
+            int rem=n%10;
+            rev=rev*10+rem;
+            n=n/10;
+
+        }
+        return rev;
+
+    }
+    public static void main(String[] args) {
+        Reverse obj=new Reverse();
+        System.out.println("rev of 1234: "+obj.reverseNumber(1234));
+         System.out.println("rev of 5678: "+obj.reverseNumber(5678));
+          System.out.println("rev of 9012: "+obj.reverseNumber(9012));
+    }
+}
